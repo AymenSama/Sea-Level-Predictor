@@ -20,6 +20,9 @@ def draw_plot():
     x = pd.Series(range(start_year, 2051))
     plt.plot(x, res.intercept + res.slope * x)
     # Add labels and title
+    plt.xlabel("Year")
+    plt.ylabel("Sea Level (inches)")
+    plt.title("Rise in Sea Level")
 
     # Save plot and return data for testing (DO NOT MODIFY)
     plt.savefig('sea_level_plot.png')
